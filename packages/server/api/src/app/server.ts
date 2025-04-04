@@ -14,6 +14,7 @@ import { system } from './helper/system/system'
 import { setupWorker } from './worker'
 
 
+
 export const setupServer = async (): Promise<FastifyInstance> => {
     const app = await setupBaseApp()
 

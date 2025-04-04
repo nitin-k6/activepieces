@@ -81,6 +81,7 @@ import {
   ProjectRouterWrapper,
   TokenCheckerWrapper,
 } from './project-route-wrapper';
+import About from '../routes/about';
 
 const SettingsRerouter = () => {
   const { hash } = useLocation();
@@ -235,6 +236,19 @@ const routes = [
       </DashboardContainer>
     ),
   }),
+  ...ProjectRouterWrapper({
+    path: '/about',
+    element: (
+      <DashboardContainer>
+        <RoutePermissionGuard permission={Permission.READ_ABOUT}>
+          <PageTitle title="About">
+            <About/>
+          </PageTitle>
+        </RoutePermissionGuard>
+      </DashboardContainer>
+    ),
+  }),
+  
   ...ProjectRouterWrapper({
     path: '/connections',
     element: (
@@ -575,6 +589,7 @@ const routes = [
       </PlatformAdminContainer>
     ),
   },
+  
   {
     path: '/platform/setup/license-key',
     element: (

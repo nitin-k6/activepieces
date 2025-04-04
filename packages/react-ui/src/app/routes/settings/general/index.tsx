@@ -208,6 +208,7 @@ export default function GeneralPage() {
           {checkAccess(Permission.WRITE_PROJECT) && (
             <div className="flex gap-2 justify-end mt-4">
               <Button
+              variant="grey"
                 onClick={(e) => {
                   e.stopPropagation();
                   e.preventDefault();

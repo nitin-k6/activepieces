@@ -161,7 +161,7 @@ export const BuilderHeader = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  variant="ghost"
+                  variant="grey"
                   className="gap-2 px-2"
                   onClick={() => openNewWindow(supportUrl)}
                 >
@@ -176,7 +176,7 @@ export const BuilderHeader = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <Button
-                  variant="ghost"
+                  variant="grey"
                   onClick={() => setLeftSidebar(LeftSideBarType.RUNS)}
                   className="gap-2 px-2"
                 >

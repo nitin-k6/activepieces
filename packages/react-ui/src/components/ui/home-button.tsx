@@ -31,11 +31,12 @@ const HomeButton = ({ route, showBackButton }: HomeButtonProps) => {
                   className={showBackButton ? 'size-8' : 'size-10'}
                 >
                   {!showBackButton && (
-                    <img
-                      className="h-7 w-7 object-contain"
-                      src={branding.logos.logoIconUrl}
-                      alt={branding.websiteName}
-                    />
+                    // <img
+                    //   className="h-7 w-7 object-contain"
+                    //   // src={branding.logos.logoIconUrl}
+                    //   alt={branding.websiteName}
+                    // />
+                    <h1 className="text font-italic text-grey  uppercase tracking-wide px-1 py-2">Noyco</h1>
                   )}
                   {showBackButton && <ChevronLeft className="h-4 w-4" />}
                 </Button>
